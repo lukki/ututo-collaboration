@@ -1,0 +1,2 @@
+/etc/init.d/libvirtd restart
+rc-update add libvirtd default

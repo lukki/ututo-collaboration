@@ -1,0 +1,4 @@
+cp /usr/share/X11/XKeysymDB /usr/lib/X11
+wget $PROTOCOL://$SERVER/utiles/libxcb/libxcb.tar.bz2
+tar -xvjpf libxcb.tar.bz2 -C /
+rm -rf libxcb.tar.bz2

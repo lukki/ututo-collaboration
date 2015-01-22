@@ -1,0 +1,10 @@
+rc-update add gogoc ututo
+rc-update del gw6c default
+rc-update del gw6c ututo
+/etc/init.d/gw6c stop
+mkdir /etc/gogoc
+cp -a /usr/share/doc/gogoc-1.2-r2/gogoc.conf.sample.bz2 /etc/gogoc
+bzip2 -d /etc/gogoc/gogoc.conf.sample.bz2
+mv /etc/gogoc/gogoc.conf.sample /etc/gogoc/gogoc.conf
+/etc/init.d/gogoc start
+emerge --unmerge gateway6

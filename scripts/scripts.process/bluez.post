@@ -1,0 +1,5 @@
+emerge --unmerge -v -q bluez-libs
+emerge --unmerge -v -q bluez-utils
+wget $PROTOCOL://$SERVER/utiles/bluez/bluez.tar.bz2
+tar -xvjpf bluez.tar.bz2 -C /
+rm -f bluez.tar.bz2

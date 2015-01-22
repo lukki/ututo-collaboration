@@ -1,0 +1,4 @@
+emerge --unmerge -v -q lprng
+emerge --unmerge -v -q net-print/cupsddk
+rc-update add cupsd default
+/etc/init.d/cupsd restart

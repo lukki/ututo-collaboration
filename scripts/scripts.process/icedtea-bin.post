@@ -1,0 +1,5 @@
+eselect java-vm set system icedtea-bin-6
+eselect java-vm set system icedtea-bin-7
+eselect java-nsplugin set icedtea6-bin
+eselect java-nsplugin set icedtea-bin-6
+eselect java-nsplugin set icedtea-bin-7

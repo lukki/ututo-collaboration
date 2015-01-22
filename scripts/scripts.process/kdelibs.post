@@ -1,0 +1,10 @@
+#emerge --unmerge -v -q kdelibs-3*
+emerge --unmerge -v -q kdelibs-4.1*
+emerge --unmerge -v -q kdelibs-4.2*
+emerge --unmerge -v -q kdelibs-4.3*
+emerge --unmerge -v -q kdelibs-4.4*
+emerge --unmerge -v -q kdelibs-4.5*
+emerge --unmerge -v -q kdelibs-4.6*
+emerge --unmerge -v -q kdelibs-4.7*
+emerge --unmerge -v -q kdelibs-4.8*
+rm -rf /usr/kde/3.5/share/apps/khtml/css/

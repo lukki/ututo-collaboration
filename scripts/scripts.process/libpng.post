@@ -1,0 +1,2 @@
+ln -sf /usr/lib/pkgconfig/libpng.pc /usr/lib/pkgconfig/libpng12.pc
+ln -sf /usr/lib/libpng.la /usr/lib/libpng12.la

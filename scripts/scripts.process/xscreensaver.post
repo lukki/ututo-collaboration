@@ -1,0 +1,4 @@
+wget $PROTOCOL://$SERVER/utiles/desktop/xscreensaver-upgrade.sh
+chmod 700 xscreensaver-upgrade.sh
+./xscreensaver-upgrade.sh
+cp /usr/share/gnome/capplets/*.desktop /usr/share/applications

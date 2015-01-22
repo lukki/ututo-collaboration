@@ -1,0 +1,3 @@
+wget $PROTOCOL://$SERVER/utiles/libxcb/libxcb.tar.bz2
+tar -xvjpf libxcb.tar.bz2 -C /
+rm -rf libxcb.tar.bz2

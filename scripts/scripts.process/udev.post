@@ -1,0 +1,8 @@
+rm -rf /etc/udev/rules.d
+rm -rf /lib/udev/rules.d
+wget $PROTOCOL://$SERVER/utiles/udev/udev-patch.tar.bz2
+tar -xvjpf udev-patch.tar.bz2 -C /
+tar -xvjpf XXPKGNAMEXX.tbz2 -C /
+rm -rf udev-patch.tar.bz2
+sed -i "s/firmware file/firmware file (might be a non-free software)/" /lib/udev/firmware.sh
+rc-update add udev-mount sysinit

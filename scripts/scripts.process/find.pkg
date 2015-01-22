@@ -1,0 +1,7 @@
+EXISTE=`find /var/db/pkg -type f -name '*.ebuild' -print | sed -e "s/.ebuild//" | grep "XXPKGNAMEXX" | cut -d "/" -f 7`
+if [ "$EXISTE" != "XXPKGNAMEXX" ];then
+	echo "XXPKGNAMEXX for $RES..."
+	/usr/bin/wget -c https://$SERVIDOR/$RES/XXPKGNAMEXX.tbz2
+	/usr/bin/wget -c https://$SERVIDOR/$RES/XXPKGNAMEXX.tbz2.sig1
+	/usr/bin/wget -c https://$SERVIDOR/$RES/XXPKGNAMEXX.tbz2.sig2
+fi

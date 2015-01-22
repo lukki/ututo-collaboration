@@ -1,0 +1,3 @@
+rm -rf /usr/share/man/man1/mountpoint.1.bz2
+rm -rf /bin/mountpoint
+emerge --nodeps -v -q -K XXPKGNAMEXX.tbz2

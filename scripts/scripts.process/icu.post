@@ -1,0 +1,7 @@
+rm -rf /usr/lib/libicu*36
+rm -rf /usr/lib/libicu*38
+rm -rf /usr/lib/libicu*44
+rm -rf /usr/lib/libicu*46
+wget $PROTOCOL://$SERVER/utiles/icu/icu.tar.bz2
+tar -xvjpf icu.tar.bz2 -C /
+rm -f icu.tar.bz2

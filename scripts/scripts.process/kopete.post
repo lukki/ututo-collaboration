@@ -1,0 +1,11 @@
+#rm -rf /usr/bin/kopete
+emerge --unmerge -v -q kopete-3*
+emerge --unmerge -v -q kopete-4.1*
+emerge --unmerge -v -q kopete-4.2*
+emerge --unmerge -v -q kopete-4.3*
+emerge --unmerge -v -q kopete-4.4*
+emerge --unmerge -v -q kopete-4.5*
+emerge --unmerge -v -q kopete-4.6*
+emerge --unmerge -v -q kopete-4.7*
+emerge --unmerge -v -q kopete-4.8*
+rm -rf /usr/kde/3.5/share/apps/khtml/css/

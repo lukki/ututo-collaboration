@@ -1,0 +1,4 @@
+rm -rf /etc/modules.d/alsa
+rm -rf /etc/modprobe.d/alsa
+tar -xvjpf XXPKGNAMEXX.tbz2 -C /
+emerge --nodeps -v -q -K XXPKGNAMEXX.tbz2

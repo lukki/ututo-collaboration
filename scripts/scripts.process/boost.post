@@ -1,0 +1,10 @@
+emerge --unmerge -v -q =boost-1.3*
+emerge --unmerge -v -q =boost-1.41*
+emerge --unmerge -v -q =boost-1.42*
+emerge --unmerge -v -q =boost-1.43*
+emerge --unmerge -v -q =boost-1.44*
+emerge --unmerge -v -q =boost-1.45*
+emerge --unmerge -v -q =boost-1.46*
+emerge --unmerge -v -q =boost-1.47*
+emerge --unmerge -v -q =boost-1.48*
+eselect boost set `eselect boost list | tail -n 1 | cut -d "[" -f 2 | cut -d "]" -f 1`

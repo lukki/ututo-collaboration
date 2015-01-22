@@ -1,0 +1,5 @@
+rm -rf /usr/share/applications/kde4/backintime-kde4-root.desktop
+rm -rf kde4/backintime-kde4.desktop
+sed -i "s/gtk-save/document-save/" /usr/share/applications/backintime-gnome-root.desktop
+sed -i "s/gtk-save/document-save/" /usr/share/applications/backintime-gnome.desktop
+rm -rf /usr/share/applications/timevault*

@@ -1,0 +1,2 @@
+rm -rf /bin/lsmod
+emerge --nodeps -v -q -K XXPKGNAMEXX.tbz2

@@ -1,0 +1,13 @@
+sed -i "s/emerging by path is broken and may not always work/UTUTO XS GNU System Installer - UGet/" /usr/lib/portage/pym/_emerge/main.py
+sed -i "s/emerging by path is broken/UTUTO XS GNU System/" /usr/lib/portage/pym/_emerge/actions.py
+sed -i "s/and may not always work\!\!\!/Installer - UGet/" /usr/lib/portage/pym/_emerge/actions.py
+REPOSITORIO=`cat /etc/uget/ututo-get.conf | grep "REPOSITORIO" | grep -v "#" | grep -v "case" | cut -d "\"" -f 2`
+if [ "$REPOSITORIO" = "disponibles" ];then
+    wget $PROTOCOL://$SERVER/utiles/portage/portage.tar.bz2
+    tar -xvjpf portage.tar.bz2 -C /
+    rm -rf portage.tar.bz2
+else
+    wget $PROTOCOL://$SERVER/utiles/portage/portage-testing.tar.bz2
+    tar -xvjpf portage-testing.tar.bz2 -C /
+    rm -rf portage.tar.bz2
+fi

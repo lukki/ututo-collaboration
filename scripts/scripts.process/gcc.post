@@ -1,0 +1,18 @@
+gcc-config `gcc-config -l | tail -n 1 | cut -d "[" -f 2 | cut -d "]" -f 1`
+eselect compiler set `gcc-config -l | tail -n 1 | cut -d "[" -f 2 | cut -d "]" -f 1`
+source /etc/profile
+fix_libtool_files.sh `gcc -dumpversion`
+rm -rf /usr/lib/libstdc*
+#cp /usr/lib/gcc/i686-pc-linux-gnu/`gcc -dumpversion`/libstdc++.so* /usr/lib
+rm -rf /usr/lib/gcc/i686-pc-linux-gnu/4.3.3/libstdc++*
+emerge --unmerge -v -q gcc-2*
+emerge --unmerge -v -q gcc-3*
+emerge --unmerge -v -q gcc-4.0*
+emerge --unmerge -v -q gcc-4.1*
+emerge --unmerge -v -q gcc-4.2*
+emerge --unmerge -v -q gcc-4.3*
+emerge --unmerge -v -q gcc-4.4*
+emerge --unmerge -v -q gcc-4.5*
+emerge --unmerge -v -q gcc-4.6*
+rm -rf /usr/lib/libstdc*
+ldconfig

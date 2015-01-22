@@ -1,0 +1,5 @@
+eselect mesa set i915 gallium
+eselect mesa set i965 gallium
+eselect mesa set r300 gallium
+eselect mesa set r600 gallium
+eselect mesa set sw gallium

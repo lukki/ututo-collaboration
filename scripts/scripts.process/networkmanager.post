@@ -1,0 +1,23 @@
+rc-update add NetworkManagerDispatcher default
+rc-update add NetworkManager default
+rc-update del net.eth0
+rc-update del net.eth1
+rc-update del net.eth2
+rc-update del net.eth3
+rc-update del net.ath0
+rc-update del net.wlan0
+rc-update del net.wlan1
+rc-update del net.wlan2
+rm /etc/init.d/net.eth0
+rm /etc/init.d/net.eth1
+rm /etc/init.d/net.eth2
+rm /etc/init.d/net.eth3
+rm /etc/init.d/net.ath0
+rm /etc/init.d/net.wlan0
+rm /etc/init.d/net.wlan1
+rm /etc/init.d/net.wlan2
+rm /etc/wpa_supplicant/wpa_supplicant.conf
+echo "send host-name \"ututo-xs\";" > /etc/dhcp/dhclient.conf
+echo "supersede host-name \"ututo-xs\";" >> /etc/dhcp/dhclient.conf
+rm -f /etc/init.d/net.eth*
+emerge --unmerge cnetworkmanager

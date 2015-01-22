@@ -1,0 +1,4 @@
+rc-update add hibernate-cleanup boot
+wget $PROTOCOL://$SERVER/utiles/hibernate/hibernate.tar.bz2
+tar -xvjpf hibernate.tar.bz2 -C /
+rm -rf hibernate.tar.bz2

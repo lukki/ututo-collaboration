@@ -1,0 +1,7 @@
+rm '/usr/lib/libv8-3.0.7.so'
+rm '/usr/lib/libv8-3.6.6.9.so'
+rm '/usr/lib/libv8.so.3.7.12.6'
+rm '/usr/lib/libv8.so.3.8.9.4'
+rm '/usr/lib/libv8.so.3.9.13'
+rm '/usr/lib/libv8.so.3.9.4'
+rm '/usr/lib/libv8.so.3.10.6'

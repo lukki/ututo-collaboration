@@ -1,0 +1,3 @@
+tar -xvjpf XXPKGNAMEXX.tbz2 -C /
+emerge --unmerge -v -q tetex
+emerge --nodeps -v -q -K XXPKGNAMEXX.tbz2

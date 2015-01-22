@@ -1,0 +1,1 @@
+emerge --unmerge -v -q compiz-fusion compiz compiz-plugins-unsupported compiz-plugins-main compiz-plugins-extra compiz-fusion-unsupported compiz-fusion-main compiz-fusion-extra libcompizconfig compizconfig-backend-kconfig4 compizconfig-backend-gconf compiz-bcop compizconfig-python ccsm emerald

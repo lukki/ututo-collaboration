@@ -1,0 +1,46 @@
+ACTUAL=`pwd`
+cd /var/db/pkg/kde-base/
+#emerge --unmerge -v -q *-3.5*
+emerge --unmerge -v -q *-4.1*
+emerge --unmerge -v -q kde-base/libkdcraw-4.2*
+emerge --unmerge -v -q kde-base/libkexiv2-4.2*
+emerge --unmerge -v -q kde-base/libkipi-4.2*
+emerge --unmerge -v -q kde-base/mplayerthumbs-4.2*
+emerge --unmerge -v -q *-4.2*
+emerge --unmerge -v -q kde-base/libkdcraw-4.3*
+emerge --unmerge -v -q kde-base/libkexiv2-4.3*
+emerge --unmerge -v -q kde-base/libkipi-4.3*
+emerge --unmerge -v -q kde-base/mplayerthumbs-4.3*
+emerge --unmerge -v -q *-4.3*
+emerge --unmerge -v -q kde-base/libkdcraw-4.4*
+emerge --unmerge -v -q kde-base/libkexiv2-4.4*
+emerge --unmerge -v -q kde-base/libkipi-4.4*
+emerge --unmerge -v -q kde-base/mplayerthumbs-4.4*
+emerge --unmerge -v -q *-4.4*
+emerge --unmerge -v -q kde-base/libkdcraw-4.5*
+emerge --unmerge -v -q kde-base/libkexiv2-4.5*
+emerge --unmerge -v -q kde-base/libkipi-4.5*
+emerge --unmerge -v -q kde-base/mplayerthumbs-4.5*
+emerge --unmerge -v -q *-4.5*
+emerge --unmerge -v -q kde-base/libkdcraw-4.6*
+emerge --unmerge -v -q kde-base/libkexiv2-4.6*
+emerge --unmerge -v -q kde-base/libkipi-4.6*
+emerge --unmerge -v -q kde-base/mplayerthumbs-4.6*
+emerge --unmerge -v -q *-4.6*
+emerge --unmerge -v -q kde-base/libkdcraw-4.7*
+emerge --unmerge -v -q kde-base/libkexiv2-4.7*
+emerge --unmerge -v -q kde-base/libkipi-4.7*
+emerge --unmerge -v -q kde-base/mplayerthumbs-4.7*
+emerge --unmerge -v -q *-4.7*
+emerge --unmerge -v -q kde-base/libkdcraw-4.8*
+emerge --unmerge -v -q kde-base/libkexiv2-4.8*
+emerge --unmerge -v -q kde-base/libkipi-4.8*
+emerge --unmerge -v -q kde-base/mplayerthumbs-4.8*
+emerge --unmerge -v -q *-4.8*
+rm -rf /usr/kde/3.5/share/apps/khtml/css/
+#mv kdelibs-3* /tmp
+#mv kde-i18n-3* /tmp
+#emerge --unmerge -v -q *-3.5*
+#mv /tmp/kdelibs-3* .
+#mv /tmp/kde-i18n-3* .
+cd $ACTUAL

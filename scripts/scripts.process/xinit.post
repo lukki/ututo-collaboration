@@ -1,0 +1,4 @@
+if [ "`cat /etc/conf.d/xdm | grep "DISPLAYMANAGER" | grep "xdm"`" != "" ];then
+    wget $PROTOCOL://$SERVER/utiles/xdm/xdm
+    chmod 644 xdm ; chown root:root xdm ; mv xdm /etc/conf.d/
+fi

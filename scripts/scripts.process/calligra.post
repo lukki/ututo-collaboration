@@ -1,0 +1,2 @@
+emerge --unmerge -v -q koffice-meta koffice-l10n koffice-libs koffice-data kexi kugar karbon kformula kspread kword kpresenter kplato krita
+emerge --nodeps -v -q -K XXPKGNAMEXX.tbz2

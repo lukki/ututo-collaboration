@@ -1,0 +1,10 @@
+emerge --unmerge konqueror-3*
+emerge --unmerge konqueror-4.1*
+emerge --unmerge konqueror-4.2*
+emerge --unmerge konqueror-4.3*
+emerge --unmerge konqueror-4.4*
+emerge --unmerge konqueror-4.5*
+emerge --unmerge konqueror-4.6*
+emerge --unmerge konqueror-4.7*
+emerge --unmerge konqueror-4.8*
+rm -rf /usr/kde/3.5/share/apps/khtml/css/
